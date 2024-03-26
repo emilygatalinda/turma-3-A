@@ -2,11 +2,11 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --verde: #ff00b3;
+    --branco: #f071ca;
+    --botao-ativo: #ffffff;
+    --botao-inativo: rgba(3, 3, 3, 0.5);
+    --texto-fundo: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -88,9 +88,29 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
+
 .contador{
-    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
     text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -106,4 +126,3 @@ body {
         border-radius: 0 40px 0 0;
     }
 }
-
